@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Bigcong-blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://bigcong9.github.io/"/>
+  <updated>2019-06-27T00:42:57.780Z</updated>
+  <id>https://bigcong9.github.io/</id>
+  
+  <author>
+    <name>喝最煭的酒</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MongoDB安装配置</title>
+    <link href="https://bigcong9.github.io/2019/06/14/mongodb-an-zhuang-pei-zhi/"/>
+    <id>https://bigcong9.github.io/2019/06/14/mongodb-an-zhuang-pei-zhi/</id>
+    <published>2019-06-13T21:51:44.000Z</published>
+    <updated>2019-06-27T00:42:57.780Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装和配置&quot;&gt;&lt;a href=&quot;#安装和配置&quot; class=&quot;headerlink&quot; title=&quot;安装和配置&quot;&gt;&lt;/a&gt;安装和配置&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://bigcong9.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="https://bigcong9.github.io/tags/github/"/>
+    
+      <category term="npm" scheme="https://bigcong9.github.io/tags/npm/"/>
+    
+      <category term="基础" scheme="https://bigcong9.github.io/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://bigcong9.github.io/2019/06/13/hello-world/"/>
+    <id>https://bigcong9.github.io/2019/06/13/hello-world/</id>
+    <published>2019-06-13T12:42:41.330Z</published>
+    <updated>2017-10-28T00:39:58.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

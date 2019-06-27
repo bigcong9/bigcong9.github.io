@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>MongoDB安装配置</title>
+      <link href="/2019/06/14/mongodb-an-zhuang-pei-zhi/"/>
+      <url>/2019/06/14/mongodb-an-zhuang-pei-zhi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装和配置"><a href="#安装和配置" class="headerlink" title="安装和配置"></a>安装和配置</h2><ul><li><a href="https://www.mongodb.com/download-center/community" target="_blank" rel="noopener">下载地址</a></li><li>安装过程<ul><li>点击完整版，不要勾选MongoD服务</li><li>不要勾选MongoDB Compass</li></ul></li><li>环境变量<ul><li>从C:\Program Files\MongoDB往里找到bin目录</li><li>win7:<blockquote><p>右键我的电脑，选择属性 -&gt; 点击高级系统设置 -&gt; 高级 -&gt; 环境变量 -&gt; 在系统变量中选中Path，点击编辑 -&gt; 把刚才的bin目录地址添加在后面，注意不要覆盖原来的内容，路径之间用分号隔开 -&gt; 点击确定</p></blockquote></li><li>win10：<blockquote><p>打开一个文件夹，在左侧找到这台电脑，右键选择属性 -&gt; 一直到点击编辑都是和win7一样 -&gt; 点击新建，把刚才的bin目录地址复制过来 -&gt; 点击确定</p></blockquote></li><li>打开cmd，输入mongod<ul><li>如果报”不是内部命令”的错，说明环境变量配置失败</li><li>如果出现”一大堆英文”，说明环境变量配置成功</li></ul></li></ul></li><li>启动数据库<ul><li>在命令行中输入mongod，没有自动退出命令行就说明数据库启动成功</li><li>缺少数据库文件的存放目录<ul><li>方法一：直接在命令行中找到缺失的目录路径（倒数第三行），然后手动添加</li><li>方法二：输入mongod –dbpath “C:\data\db”，路径值可以自定义</li></ul></li></ul></li><li>可视化工具<ul><li><a href="https://robomongo.org/download" target="_blank" rel="noopener">Robo 3T</a></li><li>创建连接，默认端口号为27017</li><li>点击collections</li><li>更改查看方式</li><li>顶部输入命令</li><li>右键refresh</li></ul></li></ul><h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a><a href="https://www.mongodb.org.cn/" target="_blank" rel="noopener">命令</a></h2><ul><li>基础命令<ul><li>显示所有数据库：show dbs</li><li>切换到某个数据库：use 库名，不存在就创建一个</li><li>显示当前数据库的名字：db</li><li>删除当前数据库：db.dropDatabase()</li><li>显示该库下所有的集合：show connections</li><li>创建集合：db.createCollection(集合名)</li><li>获取集合：db.getCollection(集合名)，db.集合名<ul><li>新建文档：create(OBJECT)</li><li>插入文档：insert(OBJECT)，insertMany</li><li>更新文档：update(OBJECT)，save，updateOne，updateMany</li><li>查看文档：find(OBJECT)，findOne，findById</li><li>清空文档：remove(OBJECT)，deleteOne，deleteMany</li><li>删除集合：drop()</li></ul></li></ul></li><li>其他命令<ul><li>格式化：pretty()</li><li>排序：sort({KEY: 1|-1})</li><li>跳过：skip(NUMBER)</li><li>批量：limit(NUMBER)  </li></ul></li><li>命令操作符<ul><li>查询：\$eq，\$ne，\$gt，\$gte，\$lt，\$lte，\$in，\$and，\$or，\$type，\$regex</li><li>更新：\$set，$unset，\$inc</li></ul></li><li>命令参数<ul><li>更新：multi</li><li>删除：justOne</li></ul></li></ul><h2 id="mongoose"><a href="#mongoose" class="headerlink" title="mongoose"></a>mongoose</h2><ul><li><a href="http://mongoosejs.net/docs/index.html" target="_blank" rel="noopener">中文文档</a></li><li>安装</li><li>连接<ul><li>connect，connection</li><li>error，open</li></ul></li><li>schema<ul><li>定义集合的结构，类似一个表头</li><li>实例化之后，传入model</li></ul></li><li>model<ul><li>创建一个model实例的同时，生成数据库中对应的collection</li><li>数据库的操作对象</li></ul></li></ul><h2 id="异步操作"><a href="#异步操作" class="headerlink" title="异步操作"></a>异步操作</h2><ul><li>回调地狱<ul><li>回调函数的疯狂嵌套</li><li>不利于阅读和维护</li></ul></li><li>promise<ul><li>创建一个包含异步操作的promise对象</li><li>链接调用：then，return</li><li>捕获错误：catch</li></ul></li><li>async/await</li></ul><h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><ul><li>熟悉mongodb的操作命令</li><li>熟悉mongoose的使用方法</li><li>学会使用promise处理异步操作</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> npm </tag>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/06/13/hello-world/"/>
+      <url>/2019/06/13/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

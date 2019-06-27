@@ -1,3 +1,0 @@
-{
-error: "no such domain"
-}
